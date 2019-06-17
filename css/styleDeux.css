@@ -10,7 +10,8 @@
       grid-auto-rows: minmax(auto);
       margin: auto;
       margin-top: 10%;
-      margin-bottom: 10%;
+      margin-bottom: 15%;
+      border-top: 0.5px solid grey;
     }
     .fade-in {
       -webkit-animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

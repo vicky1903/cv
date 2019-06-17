@@ -5,44 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV</title>
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/styleDeux.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="cv">
         <div id="wrapper" class="fade-in">
             <div id="competence">
-                <a href="#">
-                    <img src="img/competence.png" onclick="nodeClicked(this)" alt="texte cliquables : competence">
+                <a href="#comp_text">
+                    <img src="img/competence.png" id="comp" class="active" onclick="nodeClicked(this)" alt="texte cliquables : competence">
                 </a>
             </div>
             <div id="s">
-                <img src="img/s.png" alt="texte cliquables : s">
+                <img src="img/s.png" id="S" class="active" alt="texte cliquables : s">
             </div>
             <div id="formation">
-                <a href="#">
-                    <img src="img/formation.png" onclick="nodeClicked(this)" alt="texte cliquables : formation">
+                <a href="#form_text">
+                    <img src="img/formation.png" id="form" class="active" onclick="nodeClicked(this)" alt="texte cliquables : formation">
                 </a>
             </div>
-            <div id="bonus">
-                <a href="#">
-                    <img src="img/bonus.png" onclick="nodeClicked(this)" alt="texte cliquables : bonus">
+            <div id="plus">
+                <a href="#bonus_text">
+                    <img src="img/bonus.png" id="bonus" class="active" onclick="nodeClicked(this)" alt="texte cliquables : bonus">
                 </a>
             </div>
-            <div id="xp">
-                <a href="#">
-                    <img src="img/xp.png" onclick="nodeClicked(this)" alt="texte cliquables : xp qui veut dire experience">
+            <div id="exp">
+                <a href="#xp_text">
+                    <img src="img/xp.png" id="xp" class="active" onclick="nodeClicked(this)" alt="texte cliquables : xp qui veut dire experience">
                 </a>
             </div>
         </div>
-        <div id="shoulders_text" >
-            <div id="text_comp" class="details" onclick="nodeClicked(this)">Rédaction de concepts créatifs (visuels, écrits) en fonction du support choisi (presse, multimédia, affiches). <br><br>
+        <div id="shoulders_text" class="details active">
+            <div id="comp_text" class="details" onclick="nodeClicked(this)">Rédaction de concepts créatifs (visuels, écrits) en fonction du support choisi (presse, multimédia, affiches). <br><br>
                 Conception d’éléments visuels de communication (Affiches dessin, logo, identité visuelle). <br><br>
                 Utilisation de logiciels PAO Photoshop, Illustrator, InDesign, Quark X-Press (expert), Sketchup, Flash, 3DS Max (Notions de base), Shark. <br><br>
                 Conception de décors, Mise en scène, Stand, Packaging, <br><br>
                 Technos : HTML, CSS... <br>
             </div>
-            <div id="text_form" class="detail" onclick="nodeClicked(this)">2015 : Formation Compétences : Graphiste Webdesigner avec l’école ECG à st Ouen 3 mois. <br><br>
+            <img src="img/competence.png" id="comp2" class="active" onclick="nodeClicked(this)" alt="texte cliquables : competence">
+            
+
+            <div id="form_text" class="details" onclick="nodeClicked(this)">2015 : Formation Compétences : Graphiste Webdesigner avec l’école ECG à st Ouen 3 mois. <br><br>
                 2011 : Licence Pro Design, Communication et Projet à Bordeaux 3. <br><br>
                 2009 : Cours d’initiation Flash et Dreamweaver sur Mac via la Mairie de Paris. <br><br>
                 2008 : BTS EVEC Expression Visuelle Espace de Communication à l’ESAAT à Lille. <br><br>
@@ -50,12 +54,9 @@
                 2005 : Bac Professionnel Artisanat et Métiers D’art, option : Communication Graphique avec mention BIEN à Paris. <br><br>
                 2003 : C.A.P. Dessinateur d’Exécution Communication Graphique à Paris. <br><br><br>
             </div>
-            <div id="text_bonus" class="details" onclick="nodeClicked(this)">Espagnol : lu, parlé, écrit couramment. <br><br>
-                Anglais : Notions de base. <br><br>
-                Dynamique, Autonome, Curieuse, Rigoureuse, Réactive, Connaissance de la chaîne graphique, travail en environnement macintosh et PC. <br><br>
-                Peinture, Dessin, Voyages, Danse, Cinéma, photo. <br><br>
-            </div>
-            <div id="text_xp" class="details" onclick="nodeClicked(this)">2012/15 : GRAPHISTE FREELANCE. <br><br>
+            <img src="img/formation.png" id="form2" class="active" onclick="nodeClicked(this)" alt="texte cliquables : formation">
+
+            <div id="xp_text" class="details" onclick="nodeClicked(this)">2012/15 : GRAPHISTE FREELANCE. <br><br>
                 2012 : GRAPHISTE print et web dans l’agence As de Pique à Bordeaux. <br><br>
                 2011 : GRAPHISTE dans l’agence Freearts à Andernos. <br><br>
                 2007 : CRÉATIF au bureau de création dans l’agence d’événementiel DIMENSION 3 à Lille. <br><br>
@@ -63,6 +64,15 @@
                 2004 : GRAPHISTE dans l’agence publicitaire XERUS Communication à Paris. <br><br>
                 2002 : GRAPHISTE dans l’agence publicitaire LE CLAVIER à Paris. <br>
                 GRAPHISTE dans l’agence publicitaire NUMÉRO 0 à Paris. <br><br><br>
+            </div>
+            <img src="img/xp.png" id="xp2" class="active" onclick="nodeClicked(this)" alt="texte cliquables : xp qui veut dire experience" width="94px" height="76px">
+
+            <div id="bonus_text" class="details" onclick="nodeClicked(this)">
+                <img src="img/bonus.png" id="bonus2" class="active" onclick="nodeClicked(this)" alt="texte cliquables : bonus" width="62px" height="195px">
+                Espagnol : lu, parlé, écrit couramment. <br><br>
+                Anglais : Notions de base. <br><br>
+                Dynamique, Autonome, Curieuse, Rigoureuse, Réactive, Connaissance de la chaîne graphique, travail en environnement macintosh et PC. <br><br>
+                Peinture, Dessin, Voyages, Danse, Cinéma, photo. <br><br>
             </div>
         </div>
     </div>
